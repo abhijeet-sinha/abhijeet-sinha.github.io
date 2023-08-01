@@ -108,9 +108,8 @@
                     </div>
                 </div>
                 <div class="col-lg-9">
-                    <form class="row contact_form" action="contact_process.php" method="post" id="contactForm"
-                        novalidate="novalidate">
-                        <div class="col-md-6">
+                    <form class="row contact_form" method="post" id="contactForm" novalidate="novalidate">
+                        <!-- <div class="col-md-6">
                             <div class="form-group">
                                 <input type="text" class="form-control" id="name" name="name"
                                     placeholder="Enter your name">
@@ -129,18 +128,31 @@
                                 <textarea class="form-control" name="message" id="message" rows="1"
                                     placeholder="Enter Message"></textarea>
                             </div>
-                        </div>
+                        </div> -->
+
                         <div class="col-md-12 text-right">
-                            <button type="submit" value="submit" class="primary_btn">
-                                <span>Send Message</span>
-                            </button>
+                            <p>If you have any questions or need assistance, feel free to send me an email:</p>
+                            <button class="primary_btn" onclick=" sendEmail()">Send Message</button>
+
+                            <script>
+                                function sendEmail() {
+                                    window.location.href = "mailto:abhijeetsinha@gmail.com";
+                                }
+                            </script>
                         </div>
-                    </form>
+                        <!-- <div class="col-md-12 text-right">
+                            <button type="submit" value="submit" class="primary_btn">
+                                <span>Send Message</span> 
+                        <a href="mailto:your_email@example.com">Send Message</a>
+
+                        </button> -->
                 </div>
+                </form>
             </div>
-            <div id="mapBox" class="mapBox" data-lat="19.02445439503272" data-lon="73.03947294659288" data-zoom="13"
-                data-info="Navi Mumbai, India." data-mlat="19.02445439503272" data-mlon="73.03947294659288">
-            </div>
+        </div>
+        <div id="mapBox" class="mapBox" data-lat="19.02445439503272" data-lon="73.03947294659288" data-zoom="13"
+            data-info="Navi Mumbai, India." data-mlat="19.02445439503272" data-mlon="73.03947294659288">
+        </div>
         </div>
     </section>
     <!--================Contact Area =================-->
