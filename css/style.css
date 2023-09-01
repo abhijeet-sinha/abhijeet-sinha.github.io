@@ -2582,7 +2582,16 @@ h6 {
     font-family: "Rubik", sans-serif;
     font-size: 20px;
     margin-left: 20px; }
+.hidden-image {
+  display: none;
+}
 
+/* Use a media query to apply the rule when the width is less than 991px */
+@media screen and (max-width: 991px) {
+  .hidden-image {
+    display: none; /* You can keep it as "none" to hide, or change it to "block" or any other value to show. */
+  }
+}
 .call-now {
   padding-top: 50px;
   text-align: left;
