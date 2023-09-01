@@ -2582,9 +2582,7 @@ h6 {
     font-family: "Rubik", sans-serif;
     font-size: 20px;
     margin-left: 20px; }
-.hidden-image {
-  display: none;
-}
+
 
 /* Use a media query to apply the rule when the width is less than 991px */
 @media screen and (max-width: 991px) {
