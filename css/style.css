@@ -401,22 +401,22 @@ button:focus {
 .banner_area {
   position: relative;
   z-index: 1;
-  min-height: 485px; }
+  min-height: 285px; }
   @media (max-width: 1199px) {
     .banner_area {
-      min-height: 350px; } }
+      min-height: 150px; } }
   .banner_area .banner_inner {
     position: relative;
     overflow: hidden;
     width: 100%;
-    min-height: 485px;
+    min-height: 285px;
     background: url(../img/banner/common-banner.png) no-repeat right bottom;
     background-size: 90% 85%;
     width: 98%;
     z-index: 1; }
     @media (max-width: 1199px) {
       .banner_area .banner_inner {
-        min-height: 350px; } }
+        min-height: 150px; } }
     @media (max-width: 991px) {
       .banner_area .banner_inner {
         background: #854fee;
