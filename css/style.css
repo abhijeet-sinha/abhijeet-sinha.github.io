@@ -3174,11 +3174,13 @@ h6 {
   box-shadow: 0px 8px 30px rgba(118, 85, 225, 0.15);
 }
 .single-brand-item:hover img {
-  filter: brightness(0%);
-  -o-filter: brightness(0%);
-  -ms-filter: brightness(0%);
-  -moz-filter: brightness(0%);
-  -webkit-filter: brightness(0%);
+  filter: brightness(0.8);
+  -o-filter: brightness(0.8);
+  -ms-filter: brightness(0.8);
+  -moz-filter: brightness(0.8);
+  -webkit-filter: brightness(0.8);
+  transform: scale(1.05);
+  transition: all 0.3s ease;
 }
 
 .client-info {
