@@ -35,35 +35,16 @@
 			padding: 2px 0px;
 		}
 	}
-}
-.contact_form {
-	.form-group {
-		margin-bottom: 10px;
-		.form-control {
-			font-size: 13px;
-			line-height: 26px;
-			color: #999;
-			border: 1px solid #eeeeee;
-			font-family: $primary-font;
-			border-radius: 0px;
-			padding-left: 20px;
-			&:focus {
-				box-shadow: none;
-				outline: none;
-			}
-			@include placeholder {
-				color: #999;
-			}
-		}
-		textarea {
-			resize: none;
-			&.form-control {
-				height: 134px;
-			}
-		}
+	.info_item + .info_item {
+		margin-top: 25px;
 	}
-	.primary_btn {
-		margin-top: 20px;
+}
+.get_in_touch {
+	.main_title {
+		margin-bottom: 30px;
+	}
+	.contact_info {
+		margin-bottom: 35px;
 	}
 }
 

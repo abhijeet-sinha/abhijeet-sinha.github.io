@@ -157,154 +157,45 @@
             </div>
           </div>
           <div class="col-lg-9">
-            <form class="row contact_form" id="contactForm">
-              <div class="col-md-6">
-                <div class="form-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="name"
-                    name="name"
-                    placeholder="Enter your name"
-                  />
-                </div>
-                <div class="form-group">
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="email"
-                    name="email"
-                    placeholder="Enter email address"
-                  />
-                </div>
-                <div class="form-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="subject"
-                    name="subject"
-                    placeholder="Enter Subject"
-                  />
-                </div>
+            <div class="get_in_touch">
+              <div class="main_title text-left">
+                <h2>Get in touch</h2>
+                <p>
+                  The quickest way to reach me is by email or on LinkedIn — I
+                  read both and reply to everything that isn't a recruiter
+                  template.
+                </p>
               </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <textarea
-                    class="form-control"
-                    name="message"
-                    id="message"
-                    rows="5"
-                    placeholder="Enter Message"
-                  ></textarea>
+              <div class="contact_info">
+                <div class="info_item">
+                  <i class="lnr lnr-envelope"></i>
+                  <h6>
+                    <a href="mailto:abhijeetsinha@gmail.com"
+                      >abhijeetsinha@gmail.com</a
+                    >
+                  </h6>
+                  <p>Email me directly</p>
+                </div>
+                <div class="info_item">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                  <h6>
+                    <a
+                      href="https://www.linkedin.com/in/abhsin/"
+                      rel="noopener"
+                      target="_blank"
+                      >linkedin.com/in/abhsin</a
+                    >
+                  </h6>
+                  <p>Connect or message me on LinkedIn</p>
                 </div>
               </div>
-              <div class="col-md-12">
-                <div
-                  id="form-message"
-                  class="alert"
-                  style="display: none; margin-bottom: 15px"
-                ></div>
-              </div>
-              <div class="col-md-12 text-right">
-                <button
-                  type="button"
-                  id="send-message-btn"
-                  class="primary_btn"
-                  onclick="sendEmail()"
-                >
-                  Send Message
-                </button>
-              </div>
-            </form>
+              <a class="primary_btn" href="mailto:abhijeetsinha@gmail.com"
+                ><span>Email me</span></a
+              >
+            </div>
           </div>
         </div>
       </div>
-
-      <script>
-        // Make sure the script is executed after DOM is fully loaded
-        document.addEventListener("DOMContentLoaded", function () {
-          // Connect the click event to the button explicitly
-          document
-            .getElementById("send-message-btn")
-            .addEventListener("click", sendEmail);
-        });
-
-        function sendEmail() {
-          console.log("sendEmail function called"); // Debug log
-
-          // Get form values
-          const name = document.getElementById("name").value.trim();
-          const email = document.getElementById("email").value.trim();
-          const subject = document.getElementById("subject").value.trim();
-          const message = document.getElementById("message").value.trim();
-          const formMessage = document.getElementById("form-message");
-
-          // Reset any previous messages
-          formMessage.style.display = "none";
-          formMessage.className = "alert";
-          formMessage.innerHTML = "";
-
-          // Basic validation
-          if (!name || !email || !subject || !message) {
-            formMessage.className = "alert alert-danger";
-            formMessage.innerHTML = "Please fill in all fields";
-            formMessage.style.display = "block";
-            return;
-          }
-
-          // Validate email format
-          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-          if (!emailRegex.test(email)) {
-            formMessage.className = "alert alert-danger";
-            formMessage.innerHTML = "Please enter a valid email address";
-            formMessage.style.display = "block";
-            return;
-          }
-
-          try {
-            // Create mailto URL with form data
-            const mailtoLink = `mailto:abhijeetsinha@gmail.com?subject=${encodeURIComponent(
-              subject
-            )}&body=${encodeURIComponent(
-              `Name: ${name}\nEmail: ${email}\n\n${message}`
-            )}`;
-
-            // Show loading state
-            const btn = document.getElementById("send-message-btn");
-            const originalText = btn.innerHTML;
-            btn.innerHTML = "Opening email client...";
-            btn.disabled = true;
-
-            // Open the email client
-            window.location.href = mailtoLink;
-
-            // Show success message
-            setTimeout(function () {
-              formMessage.className = "alert alert-success";
-              formMessage.innerHTML =
-                "Your email client should be opening. If not, please email me directly at abhijeetsinha@gmail.com";
-              formMessage.style.display = "block";
-
-              // Reset button
-              btn.innerHTML = originalText;
-              btn.disabled = false;
-            }, 1000);
-
-            console.log("Email client should be opening with: ", mailtoLink); // Debug log
-          } catch (error) {
-            console.error("Error opening email client:", error); // Debug log
-
-            // Show error message
-            formMessage.className = "alert alert-danger";
-            formMessage.innerHTML =
-              "There was an error opening your email client. Please email me directly at abhijeetsinha@gmail.com";
-            formMessage.style.display = "block";
-
-            // Reset button
-            document.getElementById("send-message-btn").disabled = false;
-          }
-        }
-      </script>
     </section>
     <!--================Contact Area =================-->
 
@@ -363,10 +254,6 @@
     <script src="vendors/isotope/isotope-min.js"></script>
     <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
     <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/mail-script.js"></script>
-    <!--gmaps Js-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-    <script src="js/gmaps.min.js"></script>
     <script src="js/theme.js"></script>
   </body>
 </html>
