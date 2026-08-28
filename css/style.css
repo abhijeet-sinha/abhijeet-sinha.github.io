@@ -504,8 +504,8 @@ select:focus-visible,
   text-align: right;
 }
 .home_banner_area .banner_inner .home_right_img img {
-  /* sized down to 87px tall on request (was 520px) */
-  max-height: 87px;
+  /* sized down to a third of the original 520px on request */
+  max-height: 173px;
   width: auto;
   max-width: 100%;
 }
