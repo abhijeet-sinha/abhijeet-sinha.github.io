@@ -222,14 +222,13 @@
 	}
 	.home_banner_area .banner_inner {
 		min-height: 300px;
-		padding-top: 200px;
+		// was 200px, which pushed the CTAs below the fold on a phone;
+		// the fixed header is only ~71px tall here
+		padding-top: 130px;
 		padding-bottom: 50px;
 	}
 	.home_banner_area .banner_inner .banner_content {
 		margin-top: 0px;
-		.primary_btn {
-			display: none;
-		}
 	}
 
 	/* Blog Page Area css
@@ -287,6 +286,31 @@
 	.header_area + row,
 	.header_area + div {
 		margin-top: 0px;
+	}
+	/* The 100px "24+" plus its label was wider than a 320px viewport and
+	   forced the whole page to scroll sideways. */
+	.client-info {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.client-info .d-flex {
+		flex-wrap: wrap;
+	}
+	.client-info .lage {
+		font-size: 64px;
+		line-height: 64px;
+	}
+	/* Hero CTAs: side by side does not fit under ~576px, so stack them
+	   full width rather than hiding them. */
+	.home_banner_area .banner_inner .banner_content .d-flex {
+		flex-direction: column;
+	}
+	.home_banner_area .banner_inner .banner_content .primary_btn {
+		width: 100%;
+		margin-right: 0px;
+		& + .primary_btn {
+			margin-top: 15px;
+		}
 	}
 	/* Home Banner Area css
 	============================================================================================ */
