@@ -255,7 +255,6 @@
 			margin-bottom: 0px;
 			font-size: 18px;
 			line-height: 26px;
-			text-transform: uppercase;
 			color: #fff;
 			position: relative;
 		}
@@ -402,7 +401,6 @@
 				text-indent: 20px;
 				@include placeholder {
 					color: #777777;
-					text-transform: uppercase;
 					font-size: 12px;
 				}
 				&:focus {

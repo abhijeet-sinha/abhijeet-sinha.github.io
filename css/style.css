@@ -117,30 +117,57 @@ select:focus-visible,
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 .section_gap {
-  padding: 20px 0;
+  padding: 90px 0;
 }
 @media (max-width: 1199px) {
   .section_gap {
-    padding: 10px 0;
+    padding: 55px 0;
+  }
+}
+@media (max-width: 767px) {
+  .section_gap {
+    padding: 40px 0;
   }
 }
 
 .section_gap_top {
-  padding-top: 20px;
+  padding-top: 90px;
 }
 @media (max-width: 1199px) {
   .section_gap_top {
-    padding-top: 10px;
+    padding-top: 55px;
+  }
+}
+@media (max-width: 767px) {
+  .section_gap_top {
+    padding-top: 40px;
   }
 }
 
 .section_gap_bottom {
-  padding-bottom: 20px;
+  padding-bottom: 90px;
 }
 @media (max-width: 1199px) {
   .section_gap_bottom {
-    padding-bottom: 10px;
+    padding-bottom: 55px;
   }
+}
+@media (max-width: 767px) {
+  .section_gap_bottom {
+    padding-bottom: 40px;
+  }
+}
+
+/* Small eyebrow label above a section heading. This is the only element type
+   on the site that is set in caps. */
+.section_label {
+  font-family: "Rubik", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #854fee;
+  margin-bottom: 12px;
 }
 
 /* Main Title Area css
@@ -155,11 +182,11 @@ select:focus-visible,
   }
 }
 .main_title h2 {
-  font-size: 36px;
+  font-size: 42px;
   font-weight: 700;
   margin-bottom: 15px;
-  line-height: 50px;
-  text-transform: uppercase;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
 }
 @media (max-width: 991px) {
   .main_title h2 br {
@@ -168,8 +195,8 @@ select:focus-visible,
 }
 @media (max-width: 767px) {
   .main_title h2 {
-    font-size: 30px;
-    line-height: 34px;
+    font-size: 32px;
+    line-height: 1.25;
   }
 }
 .main_title p {
@@ -243,7 +270,6 @@ select:focus-visible,
   outline: none !important;
   text-align: center;
   cursor: pointer;
-  text-transform: uppercase;
   border-radius: 5px;
   background-origin: border-box;
   background-clip: content-box, border-box;
@@ -309,7 +335,6 @@ select:focus-visible,
 }
 .header_area .navbar .nav .nav-item .nav-link {
   font: 500 14px/100px "Rubik", sans-serif;
-  text-transform: uppercase;
   color: #000000;
   padding: 0px;
   display: inline-block;
@@ -473,7 +498,15 @@ select:focus-visible,
   width: 100%;
 }
 .home_banner_area .banner_inner .home_right_img {
-  padding-top: 197px;
+  padding-top: 140px;
+  text-align: right;
+}
+.home_banner_area .banner_inner .home_right_img img {
+  /* a 4:5 portrait is far taller than the illustration it replaced; cap it
+     so the hero keeps roughly its old height */
+  max-height: 520px;
+  width: auto;
+  max-width: 100%;
 }
 @media (max-width: 1480px) {
   .home_banner_area .banner_inner .home_right_img img {
@@ -587,7 +620,6 @@ select:focus-visible,
   font-size: 50px;
   font-family: "Rubik", sans-serif;
   margin-bottom: 10px;
-  text-transform: uppercase;
   font-weight: 700;
 }
 @media (max-width: 991px) {
@@ -836,7 +868,6 @@ select:focus-visible,
   margin-bottom: 0px;
   font-size: 18px;
   line-height: 26px;
-  text-transform: uppercase;
   color: #fff;
   position: relative;
 }
@@ -3107,7 +3138,6 @@ h6 {
 .feature_item h3 {
   font-size: 20px;
   margin-bottom: 20px;
-  text-transform: uppercase;
 }
 .feature_item p {
   margin-bottom: 0px;
@@ -3260,7 +3290,6 @@ h6 {
 .call-now p {
   color: #854fee;
   font-size: 16px;
-  text-transform: uppercase;
   margin-bottom: 5px;
 }
 .call-now span {
@@ -3295,7 +3324,6 @@ h6 {
   margin-right: 50px;
   font-size: 14px;
   font-weight: 500;
-  text-transform: uppercase;
   color: #222222;
   cursor: pointer;
   -webkit-transition: all 0.4s ease 0s;
@@ -3330,7 +3358,6 @@ h6 {
   }
 }
 .portfolio_box .short_info h3 {
-  text-transform: uppercase;
   font-size: 20px;
   margin-bottom: 0px;
 }
@@ -3500,7 +3527,6 @@ h6 {
 .testi_item .testi_text h3 {
   font-size: 20px;
   margin-bottom: 15px;
-  text-transform: uppercase;
 }
 .testi_item .testi_text p {
   margin-bottom: 0px;
@@ -3667,7 +3693,7 @@ h6 {
   }
 
   .header_area .navbar {
-    background: #000;
+    background: #ffffff;
   }
 
   .navbar-toggler[aria-expanded="false"] span:nth-child(2) {
@@ -3694,7 +3720,7 @@ h6 {
     display: block;
     width: 25px;
     height: 3px;
-    background: #fff;
+    background: #222222;
     margin: auto;
     margin-bottom: 4px;
     transition: all 400ms linear;
@@ -4146,7 +4172,6 @@ h6 {
   font-size: 20px;
   color: #000000;
   margin-top: 35px;
-  text-transform: uppercase;
 }
 .footer_area .footer_social {
   text-align: center;

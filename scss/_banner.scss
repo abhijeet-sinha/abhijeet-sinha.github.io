@@ -9,7 +9,15 @@
 	.banner_inner {
 		width: 100%;
 		.home_right_img {
-			padding-top: 197px;
+			padding-top: 140px;
+			text-align: right;
+			img {
+				/* a 4:5 portrait is far taller than the illustration it
+				   replaced; cap it so the hero keeps roughly its old height */
+				max-height: 520px;
+				width: auto;
+				max-width: 100%;
+			}
 			@media (max-width: 1480px) {
 				img {
 					max-width: 100%;
@@ -104,7 +112,6 @@
 				font-size: 50px;
 				font-family: $title-font;
 				margin-bottom: 10px;
-				text-transform: uppercase;
 				font-weight: 700;
 				@media (max-width: 991px) {
 					font-size: 30px;
