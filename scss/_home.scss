@@ -167,8 +167,13 @@
 		padding-top: 0px;
 	}
 	h3 {
+		font-size: 20px;
+		overflow-wrap: break-word;
 		@media (max-width: 480px) {
 			font-size: 17px;
+		}
+		a {
+			color: $title-color;
 		}
 	}
 	p {

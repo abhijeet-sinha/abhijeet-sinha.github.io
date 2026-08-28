@@ -3226,10 +3226,17 @@ h6 {
     padding-top: 0px;
   }
 }
+.call-now h3 {
+  font-size: 20px;
+  overflow-wrap: break-word;
+}
 @media (max-width: 480px) {
   .call-now h3 {
     font-size: 17px;
   }
+}
+.call-now h3 a {
+  color: #000000;
 }
 .call-now p {
   color: #854fee;

@@ -23,7 +23,6 @@
     <meta content="Abhijeet Sinha is a technology executive with 24+ years leading delivery, enterprise architecture and AI-led transformation. Based in Navi Mumbai." name="twitter:description">
     <meta content="https://abhijeet-sinha.github.io/img/banner/home-banner.png" name="twitter:image">
     <!-- Bootstrap CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet" />
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="vendors/linericon/style.css" rel="stylesheet" />
     <link href="css/font-awesome.min.css" rel="stylesheet" />
@@ -370,7 +369,11 @@
                 </div>
                 <div class="ml-15">
                   <p>Reach out</p>
-                  <h3>abhijeetsinha<br />@gmail.com</h3>
+                  <h3>
+                    <a href="mailto:abhijeetsinha@gmail.com"
+                      >abhijeetsinha@gmail.com</a
+                    >
+                  </h3>
                 </div>
               </div>
             </div>
@@ -502,14 +505,13 @@
             <li class="active" data-filter="*">all</li>
             <li data-filter=".popular">popular</li>
             <li data-filter=".latest">latest</li>
-            <li data-filter=".following">following</li>
-            <li data-filter=".upcoming">upcoming</li>
           </ul>
         </div>
 
+        <!-- TODO(abhijeet): individual case study page -->
         <div class="filters-content">
           <div class="row portfolio-grid justify-content-center">
-            <div class="col-lg-4 col-md-6 all latest upcoming">
+            <div class="col-lg-4 col-md-6 all latest">
               <div class="portfolio_box">
                 <div class="single_portfolio">
                   <img
@@ -616,7 +618,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 all following">
+            <div class="col-lg-4 col-md-6 all">
               <div class="portfolio_box">
                 <div class="single_portfolio">
                   <img
@@ -671,7 +673,7 @@
                 </div>
               </div>
             </div>
-            <!--                <div class="col-lg-4 col-md-6 all upcoming following">-->
+            <!--                <div class="col-lg-4 col-md-6 all">-->
             <!--                    <div class="portfolio_box">-->
             <!--                        <div class="single_portfolio">-->
             <!--                            <img alt="" class="img-fluid w-100" src="img/portfolio/p7.jpg">-->
@@ -688,7 +690,7 @@
             <!--                        </div>-->
             <!--                    </div>-->
             <!--                </div>-->
-            <!--                <div class="col-lg-4 col-md-6 all following">-->
+            <!--                <div class="col-lg-4 col-md-6 all">-->
             <!--                    <div class="portfolio_box">-->
             <!--                        <div class="single_portfolio">-->
             <!--                            <img alt="" class="img-fluid w-100" src="img/portfolio/p8.jpg">-->
@@ -705,7 +707,7 @@
             <!--                        </div>-->
             <!--                    </div>-->
             <!--                </div>-->
-            <!--                <div class="col-lg-4 col-md-6 all upcoming">-->
+            <!--                <div class="col-lg-4 col-md-6 all">-->
             <!--                    <div class="portfolio_box">-->
             <!--                        <div class="single_portfolio">-->
             <!--                            <img alt="" class="img-fluid w-100" src="img/portfolio/p9.jpg">-->
@@ -900,11 +902,8 @@
         </div>
         <div class="row footer_bottom justify-content-center">
           <p class="col-lg-8 col-sm-12 footer-text">
-            Copyright &copy;
-            <script>
-              document.write(new Date().getFullYear());
-            </script>
-            All rights reserved | abhijeetsinha
+              Copyright &copy; <span id="year">2026</span> Abhijeet Sinha.
+              All rights reserved.
           </p>
         </div>
       </div>
