@@ -8,13 +8,14 @@
 	background-size: cover;
 	.banner_inner {
 		width: 100%;
+		padding-top: 170px;
+		padding-bottom: 90px;
 		.home_right_img {
-			padding-top: 140px;
+			padding-top: 0px;
 			text-align: right;
 			img {
-				/* a 4:5 portrait is far taller than the illustration it
-				   replaced; cap it so the hero keeps roughly its old height */
-				max-height: 520px;
+				/* sized down to 87px tall on request (was 520px) */
+				max-height: 87px;
 				width: auto;
 				max-width: 100%;
 			}

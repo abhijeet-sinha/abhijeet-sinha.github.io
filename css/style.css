@@ -496,15 +496,16 @@ select:focus-visible,
 }
 .home_banner_area .banner_inner {
   width: 100%;
+  padding-top: 170px;
+  padding-bottom: 90px;
 }
 .home_banner_area .banner_inner .home_right_img {
-  padding-top: 140px;
+  padding-top: 0px;
   text-align: right;
 }
 .home_banner_area .banner_inner .home_right_img img {
-  /* a 4:5 portrait is far taller than the illustration it replaced; cap it
-     so the hero keeps roughly its old height */
-  max-height: 520px;
+  /* sized down to 87px tall on request (was 520px) */
+  max-height: 87px;
   width: auto;
   max-width: 100%;
 }
@@ -3285,6 +3286,20 @@ h6 {
 .call-now h3 {
   font-size: 20px;
   overflow-wrap: break-word;
+}
+.call-now .ml-15 {
+  /* flex items default to min-width: auto, which is the min-content width of
+     the unbreakable email address; without this the page scrolls sideways */
+  min-width: 0;
+}
+@media (max-width: 1199px) {
+  .client-info {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .client-info .d-flex {
+    flex-wrap: wrap;
+  }
 }
 @media (max-width: 480px) {
   .call-now h3 {
