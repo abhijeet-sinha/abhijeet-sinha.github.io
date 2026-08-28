@@ -39,6 +39,25 @@ button:focus {
 	box-shadow: none;
 }
 
+/* Keyboard focus. The template suppressed outlines everywhere, which left
+   keyboard users with no idea where they were. :focus-visible only fires for
+   keyboard navigation, so mouse clicks look exactly as before. */
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+.primary_btn:focus-visible,
+.portfolio-filter ul li:focus-visible {
+	outline: 3px solid $primary-color !important;
+	outline-offset: 3px;
+	border-radius: 2px;
+	/* a { transition: all .3s } animates outline-color, which fades the ring
+	   in from currentColor; the ring must be visible immediately. */
+	transition: none;
+}
+
 .mt-25 {
 	margin-top: 25px;
 }

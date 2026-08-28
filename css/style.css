@@ -66,6 +66,25 @@ button:focus {
   box-shadow: none;
 }
 
+/* Keyboard focus. The template suppressed outlines everywhere, which left
+   keyboard users with no idea where they were. :focus-visible only fires for
+   keyboard navigation, so mouse clicks look exactly as before. */
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+.primary_btn:focus-visible,
+.portfolio-filter ul li:focus-visible {
+  outline: 3px solid #4458dc !important;
+  outline-offset: 3px;
+  border-radius: 2px;
+  /* a { transition: all .3s } animates outline-color, which fades the ring
+     in from currentColor; the ring must be visible immediately. */
+  transition: none;
+}
+
 .mt-25 {
   margin-top: 25px;
 }
@@ -563,7 +582,7 @@ button:focus {
     margin-top: 50px;
   }
 }
-.banner_area .banner_inner .banner_content h2 {
+.banner_area .banner_inner .banner_content h1 {
   color: #fff;
   font-size: 50px;
   font-family: "Rubik", sans-serif;
@@ -572,7 +591,7 @@ button:focus {
   font-weight: 700;
 }
 @media (max-width: 991px) {
-  .banner_area .banner_inner .banner_content h2 {
+  .banner_area .banner_inner .banner_content h1 {
     font-size: 30px;
   }
 }
@@ -813,7 +832,7 @@ button:focus {
   align-items: center;
   justify-content: center;
 }
-.categories_post .categories_details h5 {
+.categories_post .categories_details h2 {
   margin-bottom: 0px;
   font-size: 18px;
   line-height: 26px;
@@ -1004,7 +1023,7 @@ button:focus {
 .blog_right_sidebar .author_widget {
   text-align: center;
 }
-.blog_right_sidebar .author_widget h4 {
+.blog_right_sidebar .author_widget h3 {
   font-size: 18px;
   line-height: 20px;
   color: #000000;
@@ -1033,14 +1052,14 @@ button:focus {
   align-self: center;
   padding-left: 20px;
 }
-.blog_right_sidebar .popular_post_widget .post_item .media-body h3 {
+.blog_right_sidebar .popular_post_widget .post_item .media-body h4 {
   font-size: 14px;
   line-height: 20px;
   color: #000000;
   margin-bottom: 4px;
   transition: all 0.3s linear;
 }
-.blog_right_sidebar .popular_post_widget .post_item .media-body h3:hover {
+.blog_right_sidebar .popular_post_widget .post_item .media-body h4:hover {
   color: #4458dc;
 }
 .blog_right_sidebar .popular_post_widget .post_item .media-body p {
@@ -1487,7 +1506,7 @@ button:focus {
   line-height: 24px;
   font-weight: 600;
 }
-.contact_info .info_item h6 {
+.contact_info .info_item .info_title {
   font-size: 16px;
   line-height: 24px;
   color: "Roboto", sans-serif;
@@ -1495,7 +1514,7 @@ button:focus {
   margin-bottom: 0px;
   color: #000000;
 }
-.contact_info .info_item h6 a {
+.contact_info .info_item .info_title a {
   color: #000000;
 }
 .contact_info .info_item p {
@@ -3085,7 +3104,7 @@ h6 {
 .feature_item img {
   margin-bottom: 35px;
 }
-.feature_item h4 {
+.feature_item h3 {
   font-size: 20px;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -3310,12 +3329,12 @@ h6 {
     margin-top: 20px;
   }
 }
-.portfolio_box .short_info h4 {
+.portfolio_box .short_info h3 {
   text-transform: uppercase;
   font-size: 20px;
   margin-bottom: 0px;
 }
-.portfolio_box .short_info h4 a {
+.portfolio_box .short_info h3 a {
   color: #000000;
 }
 
@@ -3478,7 +3497,7 @@ h6 {
     margin-top: 50px;
   }
 }
-.testi_item .testi_text h4 {
+.testi_item .testi_text h3 {
   font-size: 20px;
   margin-bottom: 15px;
   text-transform: uppercase;
@@ -4057,7 +4076,7 @@ h6 {
 
   /* End Home Banner Area css
   ============================================================================================ */
-  .banner_area .banner_inner .banner_content h2 {
+  .banner_area .banner_inner .banner_content h1 {
     font-size: 32px;
   }
 
@@ -4123,7 +4142,7 @@ h6 {
 .footer_area .footer_logo {
   text-align: center;
 }
-.footer_area .footer_logo h4 {
+.footer_area .footer_logo h2 {
   font-size: 20px;
   color: #000000;
   margin-top: 35px;
