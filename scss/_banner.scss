@@ -66,9 +66,16 @@
 					font-size: 50px;
 				}
 			}
-			h5 {
+			h5,
+			.hero_tagline {
 				font-size: 24px;
 				margin-bottom: 35px;
+			}
+			.hero_tagline {
+				font-family: $title-font;
+				font-weight: 500;
+				line-height: 1.35;
+				color: $title-color;
 			}
 			.primary_btn {
 				margin-right: 20px;

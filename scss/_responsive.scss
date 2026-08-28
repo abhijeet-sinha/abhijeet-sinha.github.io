@@ -86,7 +86,9 @@
 	}
 	.header_area + section,
 	.header_area + row,
-	.header_area + div {
+	.header_area + div,
+	.header_area + main > section,
+	.header_area + main > div {
 		margin-top: 117px;
 	}
 	.header_top .nav {
@@ -115,7 +117,9 @@
 	}
 	.header_area + section,
 	.header_area + row,
-	.header_area + div {
+	.header_area + div,
+	.header_area + main > section,
+	.header_area + main > div {
 		margin-top: 0px;
 	}
 	.header_area.navbar_fixed .main_menu .navbar .nav .nav-item .nav-link {
@@ -284,7 +288,9 @@
 @media (max-width: 575px) {
 	.header_area + section,
 	.header_area + row,
-	.header_area + div {
+	.header_area + div,
+	.header_area + main > section,
+	.header_area + main > div {
 		margin-top: 0px;
 	}
 	/* The 100px "24+" plus its label was wider than a 320px viewport and
@@ -327,7 +333,8 @@
 	.home_banner_area .banner_inner .banner_content img {
 		display: none;
 	}
-	.home_banner_area .banner_inner .banner_content h5 {
+	.home_banner_area .banner_inner .banner_content h5,
+	.home_banner_area .banner_inner .banner_content .hero_tagline {
 		margin-top: 0px;
 	}
 	/* End Home Banner Area css

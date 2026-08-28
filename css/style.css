@@ -566,9 +566,16 @@ select:focus-visible,
     font-size: 50px;
   }
 }
-.home_banner_area .banner_inner .banner_content h5 {
+.home_banner_area .banner_inner .banner_content h5,
+.home_banner_area .banner_inner .banner_content .hero_tagline {
   font-size: 24px;
   margin-bottom: 35px;
+}
+.home_banner_area .banner_inner .banner_content .hero_tagline {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  line-height: 1.35;
+  color: #000000;
 }
 .home_banner_area .banner_inner .banner_content .primary_btn {
   margin-right: 20px;
@@ -3738,7 +3745,9 @@ h6 {
 
   .header_area + section,
   .header_area + row,
-  .header_area + div {
+  .header_area + div,
+  .header_area + main > section,
+  .header_area + main > div {
     margin-top: 117px;
   }
 
@@ -3774,7 +3783,9 @@ h6 {
 
   .header_area + section,
   .header_area + row,
-  .header_area + div {
+  .header_area + div,
+  .header_area + main > section,
+  .header_area + main > div {
     margin-top: 0px;
   }
 
@@ -3972,7 +3983,9 @@ h6 {
 @media (max-width: 575px) {
   .header_area + section,
   .header_area + row,
-  .header_area + div {
+  .header_area + div,
+  .header_area + main > section,
+  .header_area + main > div {
     margin-top: 0px;
   }
 
@@ -4022,7 +4035,8 @@ h6 {
     display: none;
   }
 
-  .home_banner_area .banner_inner .banner_content h5 {
+  .home_banner_area .banner_inner .banner_content h5,
+  .home_banner_area .banner_inner .banner_content .hero_tagline {
     margin-top: 0px;
   }
 
